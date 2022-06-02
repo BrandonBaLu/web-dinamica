@@ -1,18 +1,17 @@
-$def with(resultado)
+$def with(body)
+<!DOCTYPE html>
 
-<a href="/">Regresar</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de web dinàmicas</title>
+</head>
 
-<h1>Web dinàmica del lado del servidor</h1>
+<body>
+    $:body
+</body>
 
-<form action="" method="POST">
-    <label>Número 1</label>
-    <input type="number" name="num1" id="num1" value="0">
-    <br>
-    <label>Número 2</label>
-    <input type="number" name="num2" id="num2" value="0">
-    <br>
-    <label>Resultado</label>
-    <input type="number"  readonly name="resultado" id="resultado" value=$resultado>
-    <br>
-    <input type="submit" value="SUMAR">
-</form>
+</html>
+
